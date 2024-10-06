@@ -1,0 +1,155 @@
+:root {
+   --main-light-color: #3066BE;
+   --second-light-color: #fff;
+   --third-light-color: #252525;
+}
+
+
+@font-face {
+   font-family: scp;
+   src: url(./../assets/SourceCodePro-SemiBold.ttf);
+}
+
+
+* {
+   outline: none;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: scp;
+}
+
+
+.container {
+   position: absolute;
+   top: 45%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   display: flex;
+   flex-direction: column;
+   width: 30rem;
+   padding: 1.5rem;
+   box-shadow: 0 0 25px 0 rgba(128, 128, 128, 0.556);
+   border-radius: 10px;
+}
+
+
+.top-textes {
+   margin-bottom: 1.5rem;
+}
+
+
+form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+
+.field {
+   height: 3rem;
+   padding: 0 0.75rem;
+   border-radius: 7px;
+   border: 2px solid #888;
+   color: var(--third-light-color);
+}
+
+
+.error {
+   height: 2rem;
+   background-color: #ed4337;
+   border-radius: 7px;
+   color: #fff;
+   display: none; /* set it to "block" for show the error message! */
+   align-items: center;
+   padding: 0 0.8rem;
+   font-size: 13px;
+   margin-bottom: 0.35rem;
+}
+
+
+.field:not(.field:last-child) {
+   margin-bottom: 0.75rem;
+}
+
+
+.field::placeholder {
+   color: var(--third-light-color);
+}
+
+
+.field:focus {
+   border: 2px solid var(--main-light-color);
+}
+
+
+.btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 3rem;
+   font-size: 14px;
+   border-radius: 100rem;
+   border: none;
+   cursor: pointer;
+}
+
+
+.other-option-div {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 1rem 0;
+}
+
+
+.line {
+   height: 0.1rem;
+   width: 45%;
+   background-color: var(--third-light-color);
+}
+
+
+.middle > a {
+   color: var(--third-light-color);
+   font-size: 14px;
+   margin: 1rem 0 1rem 0;
+   margin-top: 0.5rem;
+   text-decoration: none;
+}
+
+
+.github-logo {
+   margin-right: 0.65rem;
+}
+
+
+.submit-btn {
+   background-color: var(--main-light-color);
+   color: #fff;
+}
+
+
+.other-option-btn {
+   background-color: #fff;
+   color: #252525;
+   border: 2px solid #252525;
+}
+
+
+.middle {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+@media screen and (min-width: 800px) {
+   .submit-btn:hover {
+      background-color: #2155aa;
+   }
+
+   .other-option-btn:hover {
+      background-color: #eee;
+   }
+}

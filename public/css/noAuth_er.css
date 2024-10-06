@@ -1,0 +1,38 @@
+:root { 
+   --main-c: #3066BE;
+}
+
+
+@font-face {
+   font-family: scp;
+   src: url(./../assets/SourceCodePro-SemiBold.ttf);
+}
+
+
+* {
+   font-family: scp;
+}
+
+
+body {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+
+
+div {
+   position: absolute;
+   top: 45%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
+
+p,
+a {
+   font-size: 1.75rem;
+   color: var(--main-c);
+}
