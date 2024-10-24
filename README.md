@@ -2,7 +2,7 @@
 a cool secure backend (i hope) for an authentication system .
 
 ## security features ?
-- emergency response headers .
+- security response headers .
 - secure password caring .
 - a bunch of error handling .
 - front end input monitoring .
